@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.todoList {
+  border: 1px solid rgba(196, 196, 196, 1);
+  width: 100%;
+  max-width: 336px;
+  border-radius: 10px;
+  height: max-content;
+  overflow: hidden;
+}
+
+.top_line {
+  width: 100%;
+  height: 28px;
+  background: rgba(255, 220, 64, 1);
+  margin-bottom: 13px;
+}
+
+.bottom_content {
+  padding: 0 28px 19px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 26px;
+  line-height: 30px;
+  color: black;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.sort_btn_block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.sort_list {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  background: rgba(196, 196, 196, 0.629);
+  padding: 10px;
+  border: 1px solid rgba(196, 196, 196, 1);
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s linear;
+}
+
+.sort_list.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sort_list li {
+  cursor: pointer;
+}
+
+.sort_list li.toggle {
+  display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+#userinput {
+  width: 100%;
+  border: 1px solid rgba(196, 196, 196, 1);
+  border-radius: 10px;
+  outline: none;
+  padding: 10px;
+  font-size: 14px;
+}
+
+#enter {
+  font-size: 14px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 40px;
+  color: #fff;
+  background: rgba(131, 58, 224, 1);
+  padding-right: 50px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#enter span:first-child {
+  background: rgba(153, 83, 241, 1);
+  padding: 15px 20px;
+  border-radius: 50%;
+}
+
+.tasks-list {
+  width: 100%;
+}
+
+.tasks-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 10px 20px;
+  position: relative;
+  border: 1px solid rgba(196, 196, 196, 1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tasks-list li a.btn {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid rgba(196, 196, 196, 1);
+  outline: none;
+  color: rgba(196, 196, 196, 1);
+  text-align: center;
+}
+
+.li_btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.edit i {
+  color: rgba(196, 196, 196, 1);
+}
+
+.input_item {
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+}

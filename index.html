@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping list</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="todoList">
+      <div class="top_line"></div>
+      <div class="bottom_content">
+        <h2>To-Do List</h2>
+        <div class="sort_btn_block">
+          <a href="#" class="sort_btn">
+            <i class="fa-solid fa-arrow-down-wide-short"></i>
+          </a>
+          <ul class="sort_list">
+            <li class="name-order">A-Z</li>
+            <li class="name-order-reverse toggle">Z-A</li>
+            <li class="time-order-reverse">Сначала новые</li>
+            <li class="time-order toggle">Сначала старые</li>
+          </ul>
+        </div>
+        <form>
+          <input id="userinput" type="text" placeholder="добавить пункт" />
+          <ul class="tasks-list"></ul>
+          <button type="submit" id="enter">
+            <span>+</span><span>Добавить</span>
+          </button>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
